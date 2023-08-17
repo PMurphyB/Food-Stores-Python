@@ -15,7 +15,7 @@ def main() :
         
     
     elif user_state == 2 :
-        calculate_food()
+        configure_ride()
         
 def welcome_message() :
     print("Hello and welcome to Food Stores, the all in one nutrition calculator!")
@@ -35,11 +35,11 @@ def main_menu(program_state) :
     elif program_state == 2 :
         pass
     
-def calculate_food() :
+def configure_ride() :
     gel_type = ""
     need_caffeine = ""
     carbs = int(input("\nHow many carbs will you be consuming per hour? "))
-    alltime = input("Enter your ride time in HH:MM\n").split()
+    alltime = input("How long will you be riding? (Please enter your time in HH:MM). ").split()
     
     for time in alltime :
         hour, min = [int(i) for i in time.split(":")]
@@ -55,7 +55,7 @@ def calculate_food() :
         need_caffeine = "No"
         
     new_ride = Calculator(carbs, hour, min, gel_type, need_caffeine)
-        
+    new_ride.calculate_food()   
     
     
         

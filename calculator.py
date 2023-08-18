@@ -43,9 +43,3 @@ class Calculator :
         final_result = Display(num_gels, num_160, num_320, num_big_bottle, self.hours, self.minutes, self.caffeine)
         final_result.display()
         
-                
-    def food_summary(num_gels, num_160, num_320, num_big_bottles) :
-        pass
-    
-    def display_food(self) :
-        pass

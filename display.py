@@ -36,4 +36,22 @@ class Display :
         print("Have fun!")
             
         
-        
+    def setmaurten(self, num_maurten) :
+        self.num_maurten = num_maurten
+    def getmaurten(self) :
+        return self.num_maurten
+    
+    def display_warning(self) :
+        print("You are running low on ", end = "")
+        if int(self.gels) < 20 :
+            print("SIS gels, ", end = "")
+        if int(self.num_160) < 10 :
+            print("160 satchels, ", end = "")
+        if int(self.num_320) < 10 :
+            print("320 satchels, ", end = "")
+        if int(self.num_maurten) < 10 :
+            print("Maurten gels, ", end = "")
+        if int(self.caffeine) < 10 :
+            print("and caffeinated gels.")
+        print(".")
+        print("\nI would recommend you get some more!")

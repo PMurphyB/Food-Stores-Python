@@ -4,7 +4,6 @@ import sys
 from time import sleep
 from calculator import Calculator
 from user import User
-from reader import Reader
 
 users = {}
 passwords = []
